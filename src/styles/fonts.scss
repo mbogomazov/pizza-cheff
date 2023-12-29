@@ -8,15 +8,5 @@
 @font-face {
   font-family: 'Muller';
   font-weight: bold;
-  src: url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.eot');
-  src: url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.eot?#iefix')
-      format('embedded-opentype'),
-    url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.woff2')
-      format('woff2'),
-    url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.woff')
-      format('woff'),
-    url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.ttf')
-      format('truetype'),
-    url('https://db.onlinewebfonts.com/t/61ac14515cd3397f67f1d6913adcbce9.svg#MullerBlack')
-      format('svg');
+  src: url('../../src/assets/fonts/Muller/Muller Black.ttf') format('truetype');
 }
