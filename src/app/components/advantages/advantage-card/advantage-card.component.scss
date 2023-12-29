@@ -1,0 +1,28 @@
+@import '../../../../styles/shared.scss';
+
+.advantage-container {
+  display: flex;
+}
+
+:host ::ng-deep {
+  .advantage-icon {
+    height: 64px;
+    width: 64px;
+    margin-right: 1.6rem;
+  }
+
+  .advantage-title,
+  .advantage-description {
+    font-size: 1.6rem;
+  }
+
+  .advantage-title {
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .advantage-description {
+    color: $accent-color;
+  }
+}

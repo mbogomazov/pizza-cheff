@@ -1,0 +1,33 @@
+@import '../../../styles/shared.scss';
+
+.title {
+  font-size: 4.4rem;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.main-container {
+  align-items: center;
+}
+
+.text-container {
+  grid-column: span 6;
+}
+
+.advantages-container {
+  margin-top: 60px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.pizza-img {
+  grid-column: col-start 8 / span 5;
+}
