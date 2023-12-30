@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaskitoModule } from '@maskito/angular';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -21,7 +22,7 @@ import { OrderComponent } from './components/order/order.component';
     ProductsComponent,
     OrderComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, MaskitoModule],
+  imports: [BrowserModule, ReactiveFormsModule, MaskitoModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
   exports: [],
