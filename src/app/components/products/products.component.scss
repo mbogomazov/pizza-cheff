@@ -9,6 +9,8 @@
 }
 
 .products-card-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
   grid-auto-rows: 1fr;
+  align-items: stretch;
+  justify-content: center;
 }
