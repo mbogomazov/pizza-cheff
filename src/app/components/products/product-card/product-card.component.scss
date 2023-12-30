@@ -2,18 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 2.8rem 2rem 1.6rem;
+  height: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+  margin-bottom: 3.6rem;
+  text-align: center;
 }
 
 .title {
-  margin-top: 2.4rem;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
 }
 
 .description {
-  margin-bottom: 3.6rem;
   font-size: 1.4rem;
+  line-height: 1.8rem;
   text-align: center;
   padding: 0 2rem;
 }
