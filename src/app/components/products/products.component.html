@@ -1,0 +1,13 @@
+<section class="products">
+  <h3 class="products-title">Выбери свою любимую пиццу</h3>
+
+  <div class="products-card-container grid">
+    <pizza-cheff-product-card
+      class="product-card"
+      *ngFor="let product of productsList$ | async"
+      [image]="product.imageUrl"
+      [title]="product.title"
+      [description]="product.description"
+    ></pizza-cheff-product-card>
+  </div>
+</section>

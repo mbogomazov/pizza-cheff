@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.8rem 2rem 1.6rem;
+}
+
+.title {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  margin-bottom: 3.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.order-button {
+  padding: 1.6rem 8rem;
+}
