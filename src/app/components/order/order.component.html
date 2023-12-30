@@ -1,0 +1,48 @@
+<section class="order grid">
+  <div class="text-container">
+    <h3 class="title primary">Хватит думать!</h3>
+    <h3 class="title accent">Доставим заказ за&nbsp;30&nbsp;минут!</h3>
+
+    <p class="description accent">
+      Мы&nbsp;гарантированно доставим вашу пиццу за&nbsp;30&nbsp;минут
+      с&nbsp;момента оформления заказа. Если мы&nbsp;опоздаем даже
+      на&nbsp;1&nbsp;минуту&nbsp;&mdash; вы&nbsp;получаете весь заказ бесплатно
+      и&nbsp;ваучер на&nbsp;скидку на&nbsp;следующий заказ. Мы&nbsp;гордимся
+      нашим сервисом и&nbsp;сделаем всё, чтобы наш клиент был доволен
+      и&nbsp;не&nbsp;остался голодный!
+    </p>
+  </div>
+
+  <form class="form" [formGroup]="form">
+    <input
+      type="text"
+      formControlName="name"
+      placeholder="Ваше имя"
+      class="input"
+      [maskito]="{ mask: nameMask }"
+    />
+
+    <input
+      type="text"
+      formControlName="address"
+      placeholder="Адрес доставки"
+      class="input"
+    />
+
+    <input
+      type="text"
+      formControlName="phone"
+      placeholder="Телефон"
+      class="input"
+      [maskito]="{ mask: phoneMask }"
+    />
+
+    <button class="button order-button" type="submit">Оформить заказ</button>
+  </form>
+
+  <img
+    class="pizza-img"
+    src="../../../../assets/img/pizza_slice.png"
+    alt="кусок пиццы"
+  />
+</section>

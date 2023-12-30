@@ -1,0 +1,60 @@
+@import '../../../styles/shared.scss';
+
+.order {
+  margin-top: 24rem;
+  margin-bottom: 13.2rem;
+  position: relative;
+}
+
+.text-container {
+  grid-column: col-start 1 / span 4;
+}
+
+.title {
+  font-size: 3.6rem;
+}
+
+.description {
+  margin-top: 7.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.form {
+  grid-column: col-start 6 / span 4;
+  z-index: 1;
+}
+
+.input {
+  width: 100%;
+  padding: 24px;
+  margin-bottom: 2.4rem;
+  border: 1px solid $accent-color;
+
+  &::placeholder {
+    color: $accent-color;
+    opacity: 0.5;
+    font-size: 1.8rem;
+  }
+
+  &::-ms-input-placeholder {
+    color: $accent-color;
+    opacity: 0.5;
+    font-size: 1.8rem;
+  }
+}
+
+.order-button {
+  padding: 2.4rem 0;
+  min-width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pizza-img {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translate(-20%, -50%);
+  z-index: 0;
+}
