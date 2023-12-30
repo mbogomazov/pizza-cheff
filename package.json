@@ -17,6 +17,8 @@
     "@angular/platform-browser": "~15.2.0",
     "@angular/platform-browser-dynamic": "~15.2.0",
     "@angular/router": "~15.2.0",
+    "@maskito/angular": "^1.9.0",
+    "@maskito/core": "^1.9.0",
     "@ngneat/until-destroy": "^10.0.0",
     "@nrwl/angular": "15.9.7",
     "rxjs": "~7.8.0",

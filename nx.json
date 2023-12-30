@@ -52,7 +52,8 @@
     },
     "@nrwl/angular:component": {
       "style": "scss",
-      "changeDetection": "OnPush"
+      "changeDetection": "OnPush",
+      "skipTests": true
     }
   },
   "defaultProject": "pizza-cheff"
