@@ -1,11 +1,17 @@
 <div class="container shadow">
-  <img class="image" [src]="image" alt="product image" />
+  <div class="product-info-container">
+    <img class="image" [src]="image" alt="фото пиццы" (click)="zoomIn()" />
 
-  <div class="text-container">
-    <h4 class="title">{{ title }}</h4>
+    <div class="text-container">
+      <h4 class="title">{{ title }}</h4>
 
-    <p class="description">{{ description }}</p>
+      <p class="description">{{ description }}</p>
+    </div>
   </div>
 
   <button class="button order-button">В&nbsp;корзину</button>
+</div>
+
+<div class="zoomed-image-container" (click)="zoomOut()" *ngIf="isZoomed">
+  <img [src]="image" class="zoomed-image" />
 </div>

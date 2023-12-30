@@ -4,6 +4,7 @@
   height: 100px;
   align-items: center;
   margin-bottom: 14.4rem;
+  position: relative;
 }
 
 .logo-container {
@@ -20,6 +21,7 @@
 
 .links-container {
   grid-column: col-start 5 / span 7;
+  transition: all 0.5 ease-in-out;
 }
 
 .header-link {
@@ -28,5 +30,77 @@
 
   &:nth-child(n + 2) {
     margin-left: 4.8rem;
+  }
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-line {
+  height: 4px;
+  width: 24px;
+  background-color: $accent-color;
+  margin-bottom: 2px;
+}
+
+.close-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1190px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .logo-container {
+    grid-column: span 11;
+  }
+
+  .links-container {
+    display: flex;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    height: 52px;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    grid-column: unset;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .links-container {
+    flex-direction: column;
+    position: fixed;
+    padding: 4.8rem 0;
+    height: 100vh;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .header-link {
+    margin-bottom: 2.4rem;
+    font-size: 2.8rem;
+
+    &:nth-child(n + 2) {
+      margin-left: 0;
+    }
+  }
+
+  .close-btn {
+    display: block;
+    position: fixed;
+    right: 2.4rem;
+    top: 2.8rem;
+    font-size: 2.4rem;
+    color: $primary-color;
   }
 }

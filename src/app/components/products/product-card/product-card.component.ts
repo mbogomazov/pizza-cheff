@@ -15,4 +15,14 @@ export class ProductCardComponent {
 
   @Input()
   description!: string;
+
+  isZoomed = false;
+
+  zoomIn() {
+    this.isZoomed = true;
+  }
+
+  zoomOut() {
+    this.isZoomed = false;
+  }
 }

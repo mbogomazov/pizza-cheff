@@ -13,7 +13,7 @@
     </p>
   </div>
 
-  <form class="form" [formGroup]="form">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
     <input
       type="text"
       formControlName="name"
@@ -46,3 +46,11 @@
     alt="кусок пиццы"
   />
 </section>
+
+<div
+  class="order-complete-container"
+  (click)="closePopul()"
+  *ngIf="orderCompleted | async"
+>
+  <h2 class="order-complete-title">Спасибо за заказ!</h2>
+</div>

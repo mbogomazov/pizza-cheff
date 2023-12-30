@@ -6,6 +6,7 @@
 
 .main-container {
   align-items: center;
+  position: relative;
 }
 
 .text-container {
@@ -20,6 +21,45 @@
   gap: 48px;
 }
 
+.advantage-description {
+  max-width: 21.2rem;
+}
+
 .pizza-img {
   grid-column: col-start 8 / span 5;
+}
+
+@media screen and (max-width: 1300px) {
+  .pizza-img {
+    position: absolute;
+    right: -50%;
+    transform: translateX(50%) scale(2);
+  }
+
+  .text-container {
+    grid-column: span 10;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .pizza-img {
+    display: none;
+  }
+
+  .text-container {
+    grid-column: span 12;
+  }
+
+  .advantages-container {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage-description {
+    max-width: 44rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
 }

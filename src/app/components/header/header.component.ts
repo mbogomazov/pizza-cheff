@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'pizza-cheff-header',
@@ -6,4 +7,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent { }
+export class HeaderComponent {
+
+  readonly mobileMenuShow = new BehaviorSubject<boolean>(false);
+
+  toggleMobileMenu() {
+    this.mobileMenuShow.next(!this.mobileMenuShow.value);
+  }
+}

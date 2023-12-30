@@ -4,7 +4,14 @@
     <p class="logo-text primary">Pizza<br />Cheff</p>
   </div>
 
-  <div class="links-container">
+  <button class="mobile-menu" (click)="toggleMobileMenu()">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </button>
+
+  <div class="links-container" *ngIf="mobileMenuShow | async">
+    <button class="close-btn" (click)="toggleMobileMenu()">Закрыть</button>
     <a href="#" class="header-link">Пиццы</a>
     <a href="#" class="header-link">Напитки</a>
     <a href="#" class="header-link">Доставка и&nbsp;оплата</a>

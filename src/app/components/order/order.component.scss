@@ -30,13 +30,10 @@
   padding: 24px;
   margin-bottom: 2.4rem;
   border: 1px solid $accent-color;
+  color: $primary-color;
+  font-size: 1.8rem;
 
-  &::placeholder {
-    color: $accent-color;
-    opacity: 0.5;
-    font-size: 1.8rem;
-  }
-
+  &::placeholder,
   &::-ms-input-placeholder {
     color: $accent-color;
     opacity: 0.5;
@@ -56,4 +53,49 @@
   top: 40%;
   transform: translate(-20%, -50%);
   z-index: 0;
+}
+
+.order-complete-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: cl;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.order-complete-title {
+  position: fixed;
+  color: $primary-color;
+  background-color: #fff;
+  padding: 2.4rem 4.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
+}
+
+@media screen and (max-width: 1300px) {
+  .text-container {
+    grid-column: col-start 1 / span 6;
+  }
+
+  .form {
+    grid-column: col-start 7 / span 12;
+  }
+
+  .pizza-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .text-container {
+    grid-column: span 12;
+  }
+
+  .form {
+    grid-column: span 12;
+  }
 }

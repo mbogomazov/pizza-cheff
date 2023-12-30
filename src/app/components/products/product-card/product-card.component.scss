@@ -7,16 +7,41 @@
   height: 100%;
 }
 
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image {
   cursor: zoom-in;
+  max-height: 14.4rem;
+}
+
+.zoomed-image-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: zoom-out;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.zoomed-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
   margin-top: 2.4rem;
-  margin-bottom: 3.6rem;
   text-align: center;
+  padding-bottom: 1.8rem;
 }
 
 .title {
